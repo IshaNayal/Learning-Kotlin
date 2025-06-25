@@ -1,0 +1,239 @@
+fun main(){
+   println("hello world")
+}
+o/t = hello world
+JDK converts kotlin source code to Java Byte Code
+JVM converts Java Byte Code to Machine code
+Machine code depends on the type of Operating system
+
+### use of variables
+fun main(){
+   var userName : String = "Isha"
+   println("hello $userName")
+o/t = hello Isha
+
+### changing value of variable
+fun main(){
+ var userName : String = "Isha"
+ userName = "Isha Nayal"
+ println("hello $userName")
+o/t hello Isha Nayal
+
+kotlin is static language...ie it checks the variable type at the time of writing code or compile time
+
+val stands for value
+its content cannot be changed like we change of var
+
+fun main(){
+var userName : String = "Isha"
+userName = "Isha Nayal"
+println("hello $userName")
+val myWork : String = "coding"
+println("do $myWork")
+o/t hello Isha Nayal
+    do coding
+
+kotlin has an inbuild type interface which detects the type of data stored in the variable so we can skip declaring the type of data 
+
+fun main(){
+  var userName: String = "Isha"
+  val userAge: Int = 18
+  println("hello $userName, your age is $userAge")
+
+}
+
+fun main(){
+  val integerMaxValue = Int.MAX_VALUE
+  val integerMinValue = Int.MIN_VALUE
+  println("Integer max value : $integerMaxValue")
+  println("Integer min value : $integerMinValue")
+
+}
+O/T  Integer max value : 2147483647
+Integer min value : -2147483648
+
+if we store value above or below this range in int data type, it shows error
+int occupies 32 bit
+
+## byte data type (occupies 8 bit)
+fun main(){
+  val byteMaxValue = Byte.MAX_VALUE
+  val byteMinValue = Byte.MIN_VALUE
+  println("Byte max value : $byteMaxValue")
+  println("Byte min value : $byteMinValue")
+
+}
+
+Output: Byte max value : 127
+Byte min value : -128
+
+
+## Short data type (occupies 16 bit)
+fun main(){
+val shortMaxValue = Short.MAX_VALUE
+val shortMinValue = Short.MIN_VALUE
+println("Short max value : $shortMaxValue")
+println("Short min value : $shortMinValue")
+}
+
+Output: Short max value : 32767
+Short min value : -32768
+
+## Long data type
+fun main(){
+val longMaxValue : Long = Long.MAX_VALUE
+val longMinValue : Long = Long.MIN_VALUE
+println("Long max value: $longMaxValue")
+println("Long min value: $longMinValue")
+
+Output:
+
+Long max value: 9223372036854775807
+Long min value: -9223372036854775808
+
+
+fun main(){
+  val numOne = 2.50
+  val numTwo = 2.50
+  println("numOne = $numOne and numTwo =$numTwo")
+}
+
+Output:
+numOne = 2.5 and numTwo =2.5
+
+## Char data type
+fun main(){
+ val myCharValue: Char = 'D'
+ println("$myCharValue")
+}
+
+Output:
+D
+
+
+## Boolean Data Type
+fun main(){
+  val myBooleanValue: Boolean = true
+  println(myBooleanValue)
+
+Output:
+true
+
+
+fun main(){
+  val x = 5
+  val y = 3
+  val result = x + y
+  println("result = $result")
+}
+
+Output:
+result = 8
+
+
+fun main(){
+  val x = 5
+  val y = 3
+ println("x+y = ${x+y}")
+ println("x-y = ${x-y}")
+  println("x*y = ${x*y}")
+   println("x/y = ${x/y}")
+    println("x%y = ${x%y}")
+}
+
+Output:
+
+x+y = 8
+x-y = 2
+x*y = 15
+x/y = 1
+x%y = 2
+
+
+
+fun main(){
+  val x = 5
+  val y = 3
+var result = x + y
+ result = result + 2
+ println("result = $result")
+ }
+Output:
+result = 10
+
+result = result + 2 can also be written as result += 2
+and same for other operator
+
+increment operator = inc value by 1
+fun main() {
+   var x: Int = 5
+    println("x++ : ${x++}")
+    println("after postfix increment, x: $x")
+    println("++x : ${++x}")
+    println("after prefix increment, x: $x")
+  
+}
+Output:
+
+x++ : 5
+after postfix increment, x: 6
+++x : 7
+after prefix increment, x: 7
+
+decrement operator = dec value by 1
+fun main() {
+   var x: Int = 5
+    println("x-- : ${x--}")
+    println("after postfix decrement, x: $x")
+    println("--x : ${--x}")
+    println("after prefix decrement, x: $x")
+  
+}
+Output:
+
+x-- : 5
+after postfix decrement, x: 4
+--x : 3
+after prefix decrement, x: 3
+
+### control statements
+fun main() {
+   val isActive = false
+   if (isActive == true){
+     println("the condition is true")
+   }
+   else{
+     println("the condition is false")
+   }
+  
+}
+Output: the condition is false
+
+fun main() {
+   val isActive = true
+   if (isActive == true){
+     println("the condition is true")
+   }
+   else{
+     println("the condition is false")
+   }
+  
+}
+Output:the condition is true
+
+if we replace  "if (isActive == true)" with  "if (isActive )" ,then also the outputs will be same
+
+
+fun main() {
+   val myNum = 5
+   if 
+     (myNum >= 3){
+     println("true")
+   }
+   else{
+     println("false")
+   }
+}
+OUTPUT : true
+do the same for less than operator
+.
