@@ -237,3 +237,56 @@ fun main() {
 OUTPUT : true
 do the same for less than operator
 .
+
+fun main(args: Array<String>) {
+   val myNumber = 151
+   if (myNumber < 150){
+     println("less than 150")
+   }
+   else if (myNumber <=150){
+     println(" equal to 150")
+     }
+   else{
+       println("all conditions failed")
+     }
+
+Output:
+all conditions failed
+
+! == logical not operator
+
+
+&& == logical "and" operator
+fun main(args: Array<String>) {
+   val isActive = true
+   val score = 80
+   if(isActive && score == 100){
+     println("you are the the next level")
+   }
+   else{
+     println("you are at the same level")
+   }
+}
+
+Output:
+you are at the same level
+
+both conditions should be true for logical "and" operator to return true 
+Output:
+you are at the same level
+
+
+## LOGICAL OR OPERATOR ||
+fun main(){
+  val num1 = 5
+  val num2 = 4
+   if(num1 > 0 || num2 >0){
+     println("the condition is true")
+   }else{
+     println("the condition is false")
+   }
+}
+
+Output:the condition is true
+returns "true" is atleast one of the condition is true
+
